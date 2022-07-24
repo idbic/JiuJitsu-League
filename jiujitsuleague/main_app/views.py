@@ -11,3 +11,11 @@ def home(request):
 def tournaments(request): 
     return HttpResponse("Tournaments Page Jiu Jitsu League")
 
+def profile(request): 
+    return HttpResponse("Settings/ Profile information")
+
+def login(request): 
+    return HttpResponse("Login page")
+
+def signup(request): 
+    return HttpResponse("signup")
