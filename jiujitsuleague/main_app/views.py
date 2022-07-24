@@ -6,7 +6,7 @@ from django.shortcuts import render
 # Home View
 
 def home(request): 
-    return HttpResponse("hey it me Jiu jitsu League")
+    return render(request, 'home.html')
 
 def tournaments(request): 
     return render(request, 'tournaments.html')
