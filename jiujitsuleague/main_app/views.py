@@ -7,3 +7,7 @@ from django.http import HttpResponse
 
 def home(request): 
     return HttpResponse("hey it me Jiu jitsu League")
+
+def tournaments(request): 
+    return HttpResponse("Tournaments Page Jiu Jitsu League")
+
