@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1> Hello Front End </h1>
+      <h1 class="App-header"> Hello Front End </h1>
     </div>
   );
 }
