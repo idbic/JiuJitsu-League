@@ -5,6 +5,10 @@ from django.http import HttpResponse
 from django.shortcuts import render
 # Home View
 
+def front(request):
+    context = { }
+    return render(request, "index.html", context)
+
 def home(request): 
     return render(request, 'home.html')
 
