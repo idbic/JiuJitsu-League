@@ -7,8 +7,8 @@ from main_app.views import front
 
 urlpatterns = [
 path('admin/', admin.site.urls),
-path("", front, name="front"),
-path('', views.home, name='home'),
+path("", front, name="front"), #this is the react url
+# path('', views.home, name='home'),
 path('tournaments/', views.tournaments, name='tournaments'),
 path('profile/', views.profile, name='profile'), 
 path('login/', views.login, name='login'),
