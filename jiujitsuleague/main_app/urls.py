@@ -1,13 +1,13 @@
 from django.urls import path
 from . import views
 from django.contrib import admin
-from main_app.views import front
+
 
 
 
 urlpatterns = [
 path('admin/', admin.site.urls),
-path("", front, name="front"), #this is the react url
+path("", views.front, name="front"), #this is the react url
 # path('', views.home, name='home'),
 path('tournaments/', views.tournaments, name='tournaments'),
 path('profile/', views.profile, name='profile'), 
