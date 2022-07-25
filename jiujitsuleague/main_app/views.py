@@ -12,10 +12,13 @@ def tournaments(request):
     return render(request, 'tournaments.html')
 
 def profile(request): 
-    return HttpResponse("Settings/ Profile information")
+    return render(request, "profile.html")
 
 def login(request): 
-    return HttpResponse("Login page")
+    return render(request, "login.html")
 
 def signup(request): 
-    return HttpResponse("signup")
+    return render(request, "signup.html")
+
+def rankings(request):
+    return render(request, "rankings.html")

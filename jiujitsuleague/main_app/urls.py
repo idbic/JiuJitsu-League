@@ -7,5 +7,5 @@ path('tournaments/', views.tournaments, name='tournaments'),
 path('profile/', views.profile, name='profile'), 
 path('login/', views.login, name='login'),
 path('signup/', views.signup, name='signup'),
-
+path('rankings/', views.rankings, name='rankings')
 ]

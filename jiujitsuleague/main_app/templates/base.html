@@ -1,21 +1,29 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JiuJitsu League</title>
-  
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jiu Jitsu League</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href='{% static 'css/style.css' %}' type="text/css">
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> 
+    </head>
 <body>
   <header class="navbar-fixed">
-    <nav>
+    <nav class="black">
       <div class="nav-wrapper">
         <ul>
           <li><a href="/" class="left brand-logo">&nbsp;&nbsp;JiuJitsu League</a></li>
         </ul>
         <ul class="right">
           <li><a href="/tournaments">Tournaments</a></li>
+          <li><a href="/rankings">Rankings</a></li>
+          <li><a href="/profile">Profile</a></li>
+          
         </ul>
       </div>
     </nav>
@@ -24,7 +32,7 @@
     {% block content %}
     {% endblock %}
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer black">
     <div class="right">All Rights Reserved, &copy; 2021 Jiu Jitsu League &nbsp;</div>
   </footer>
 </body>
