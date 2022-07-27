@@ -16,8 +16,8 @@ def tournaments(request):
     return render(request, 'tournaments.html')
 
 
-def tournaments_detail(request, cat_id):
-  cat = Cat.objects.get(id=cat_id)
+def tournaments_detail(request, tournament_id):
+  tournament = Tournamentk.objects.get(id=tournament_id)
   return render(request, 'tournaments/detail.html', { 'tournament': tournament })
 
 
