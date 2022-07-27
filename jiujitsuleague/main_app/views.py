@@ -15,6 +15,12 @@ def home(request):
 def tournaments(request): 
     return render(request, 'tournaments.html')
 
+
+def tournaments_detail(request, cat_id):
+  cat = Cat.objects.get(id=cat_id)
+  return render(request, 'tournaments/detail.html', { 'tournament': tournament })
+
+
 def profile(request): 
     return render(request, "profile.html")
 
