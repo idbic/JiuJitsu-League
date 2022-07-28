@@ -60,6 +60,17 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
 ]
 
+
+# added rest framework dict and cors origin for restful api routing 
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [   'rest_framework.permissions.AllowAny' ],
+    }
+
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+
 ROOT_URLCONF = 'jiujitsuleague.urls'
 
 TEMPLATES = [
