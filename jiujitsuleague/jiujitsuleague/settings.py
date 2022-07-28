@@ -45,6 +45,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_react_components',
     'webpack_loader',
+    'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
