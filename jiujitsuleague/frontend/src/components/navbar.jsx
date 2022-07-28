@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import * as userService from '../../utilities/users-service'
+
 
 
 export default function NavBar({user, setUser}) {
@@ -21,7 +21,7 @@ export default function NavBar({user, setUser}) {
       &nbsp; | &nbsp;
       Welcome, {user.name}
       &nbsp; | &nbsp;
-      <Link to="" onClick={handleLogOut}>Loggity Logg Out Son!</Link>
+      <Link to="" onClick={null}>Loggity Logg Out Son!</Link>
       
     </nav>
   );

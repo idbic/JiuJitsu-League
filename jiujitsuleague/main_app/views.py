@@ -17,7 +17,7 @@ def tournaments(request):
 
 
 def tournaments_detail(request, tournament_id):
-  tournament = Tournamentk.objects.get(id=tournament_id)
+  tournament = Tournament.objects.get(id=tournament_id)
   return render(request, 'tournaments/detail.html', { 'tournament': tournament })
 
 

@@ -1,12 +1,43 @@
-
+import { Component } from 'react';
+import Navbar from '../components/navbar'
 import './App.css';
+import axios from 'axios'
+import react from 'react'
 
-function App() {
+
+export default function App() {
+
+  state = {
+    details: [],
+  }
+
+  componentDidMount() {
+
+    let data;
+
+    axios.get('http://localhost:8000/wel/')
+      .then(res => {
+        data = res.data;
+        this.setState({
+          details: data
+        });
+      })
+      .catch(err => { })
+  }
+
   return (
-    <div>
-      <h1 class="App-header"> Hello Front End </h1>
-    </div>
+    <>
+
+      <h1>React Front, Django rear </h1>
+
+    </>
+
+
+
   );
 }
 
-export default App;
+
+
+
+
